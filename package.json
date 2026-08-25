@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "deploy": "next build && cd out && rm -rf .git && git init && git checkout -B production && git add -A && git commit -m 'Deploy static build to production branch' && git remote add origin https://github.com/mouadessalim/mouadessalim.github.io.git && git push -f origin production && rm -rf .git"
   },
   "dependencies": {
     "lucide-react": "^1.16.0",
