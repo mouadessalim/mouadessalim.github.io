@@ -1,0 +1,150 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme inline {
+  --font-sans: var(--font-manrope);
+  --font-mono: var(--font-geist-mono);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--primary);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+}
+
+:root {
+  color-scheme: light;
+  --background: oklch(0.975 0.008 225);
+  --foreground: oklch(0.25 0.055 250);
+  --card: oklch(0.995 0.003 220);
+  --card-foreground: oklch(0.25 0.055 250);
+  --primary: oklch(0.55 0.18 250);
+  --primary-foreground: oklch(0.99 0.002 220);
+  --muted: oklch(0.94 0.018 230);
+  --muted-foreground: oklch(0.51 0.04 245);
+  --border: oklch(0.84 0.035 235);
+  --accent: oklch(0.66 0.2 30);
+  --radius: 0.35rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --background: oklch(0.2 0.035 250);
+    --foreground: oklch(0.93 0.018 230);
+    --card: oklch(0.24 0.04 250);
+    --card-foreground: oklch(0.93 0.018 230);
+    --primary: oklch(0.72 0.14 245);
+    --primary-foreground: oklch(0.18 0.035 250);
+    --muted: oklch(0.28 0.038 250);
+    --muted-foreground: oklch(0.71 0.04 235);
+    --border: oklch(0.38 0.045 245);
+    --accent: oklch(0.72 0.17 32);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply scroll-smooth bg-background;
+  }
+  body {
+    @apply bg-background font-sans text-foreground antialiased;
+  }
+  a,
+  button {
+    @apply focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring;
+  }
+  ::selection {
+    @apply bg-primary text-primary-foreground;
+  }
+}
+
+body {
+  background-image:
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(
+      90deg,
+      color-mix(in oklch, var(--border), transparent 45%) 1px,
+      transparent 1px
+    );
+  background-size:
+    100% 2rem,
+    2rem 100%;
+}
+
+.wristband-barcode {
+  background: repeating-linear-gradient(
+      90deg,
+      var(--foreground) 0 1px,
+      transparent 1px 3px,
+      var(--foreground) 3px 5px,
+      transparent 5px 8px,
+      var(--foreground) 8px 9px,
+      transparent 9px 12px
+    )
+    center / calc(100% - 1.5rem) 1.7rem no-repeat;
+}
+
+.ecg-grid {
+  background-color: color-mix(in oklch, var(--card), var(--accent) 2%);
+  background-image:
+    linear-gradient(
+      color-mix(in oklch, var(--accent), transparent 88%) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      color-mix(in oklch, var(--accent), transparent 88%) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      color-mix(in oklch, var(--accent), transparent 94%) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      color-mix(in oklch, var(--accent), transparent 94%) 1px,
+      transparent 1px
+    );
+  background-size:
+    2rem 2rem,
+    2rem 2rem,
+    0.4rem 0.4rem,
+    0.4rem 0.4rem;
+}
+
+.ecg-pulse {
+  animation: ecg-pulse 1.8s ease-out infinite;
+}
+@keyframes ecg-pulse {
+  0% {
+    box-shadow: 0 0 0 0 color-mix(in oklch, var(--accent), transparent 45%);
+  }
+  70%,
+  100% {
+    box-shadow: 0 0 0 0.45rem transparent;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
