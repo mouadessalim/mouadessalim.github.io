@@ -94,6 +94,7 @@ export type PracticeItem = {
 export type Project = {
   code: string;
   title: string;
+  category: string;
   description: string;
   year: string;
   status: string;
@@ -105,12 +106,35 @@ export const projects: Project[] = [
   {
     code: "PRJ-01",
     title: "CSGO Value Calculator",
+    category: "Desktop utility / Steam inventory",
     description:
       "A Windows desktop utility that calculates the value of a Steam Counter-Strike inventory from a SteamID or profile link, with currency-aware pricing and an Electron interface backed by Python automation.",
     year: "2021",
     status: "Archived",
     stack: ["Python", "Electron", "Selenium", "Steam"],
     href: "https://github.com/mouadessalim/CsgoValueCalculator",
+  },
+  {
+    code: "PRJ-02",
+    title: "CookedGrabber",
+    category: "Security research / Educational PoC",
+    description:
+      "An educational proof-of-concept demonstrating how info-stealers harvest browser session cookies, tokens, and credentials on Windows systems, built to study browser storage vulnerabilities and security awareness.",
+    year: "2022",
+    status: "Archived",
+    stack: ["Python", "Chromium", "Discord API", "Windows"],
+    href: "https://github.com/mouadessalim/CookedGrabber",
+  },
+  {
+    code: "PRJ-03",
+    title: "Discord QR Token Logger",
+    category: "Social engineering / Security research",
+    description:
+      "An educational security tool illustrating how QR code phishing attacks intercept authentication tokens via WebSocket session hijacking, demonstrating social engineering attack vectors and mitigation techniques.",
+    year: "2022",
+    status: "Archived",
+    stack: ["Python", "WebSockets", "QR Code", "Discord API"],
+    href: "https://github.com/9P9/Discord-QR-Token-Logger",
   },
 ];
 

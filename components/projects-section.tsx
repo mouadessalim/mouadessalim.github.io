@@ -38,7 +38,7 @@ export function ProjectsSection() {
               <div className="flex flex-col gap-5 p-5 md:p-7">
                 <div className="flex items-center gap-3">
                   <Code2 className="text-primary" aria-hidden="true" />
-                  <Eyebrow>Desktop utility / Steam inventory</Eyebrow>
+                  <Eyebrow>{project.category}</Eyebrow>
                 </div>
                 <div className="flex flex-col gap-3">
                   <h3 className="text-balance text-3xl font-bold tracking-[-0.035em] md:text-4xl">
