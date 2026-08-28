@@ -34,10 +34,9 @@ export function HeroSection() {
                 </span>
               </h1>
               <p className="max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">
-                I was thirteen, trying to make a game in a place that was
-                never designed for it. That stubborn experiment became a long
-                search for the right way to turn logic into useful, visible
-                software.
+                I was thirteen, trying to make a game in a place that was never
+                designed for it. That stubborn experiment became a long search
+                for the right way to turn logic into useful, visible software.
               </p>
             </div>
             <a
@@ -68,7 +67,10 @@ export function HeroSection() {
                 Signal
               </span>
               <strong className="flex items-center gap-2 text-sm">
-                <span className="h-2 w-2 rounded-full bg-(--accent) shadow-[0_0_0_0.25rem_color-mix(in_oklch,var(--accent),transparent_80%)]" />
+                <i
+                  className="ecg-pulse h-2 w-2 rounded-full bg-(--accent)"
+                  aria-hidden="true"
+                />
                 Learning actively
               </strong>
             </div>

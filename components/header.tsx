@@ -37,7 +37,7 @@ export function Header() {
           </span>
           <strong className="flex items-center gap-2 whitespace-nowrap font-mono text-[0.56rem] uppercase tracking-[0.06em] text-(--accent)">
             <i
-              className="h-[0.45rem] w-[0.45rem] rounded-full bg-(--accent) shadow-[0_0_0_0.2rem_color-mix(in_oklch,var(--accent),transparent_82%)]"
+              className="ecg-pulse h-2 w-2 rounded-full bg-(--accent)"
               aria-hidden="true"
             />{" "}
             Available to build
