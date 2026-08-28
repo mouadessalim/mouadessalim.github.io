@@ -13,7 +13,7 @@ export function HeroSection() {
       <article className="overflow-hidden border border-border bg-card shadow-[0.7rem_0.7rem_0_color-mix(in_oklch,var(--primary),transparent_86%)]">
         <div className="flex flex-wrap items-center justify-between gap-3 border-b border-border bg-muted px-4 py-3 font-mono text-[0.625rem] font-semibold tracking-[0.12em]">
           <span>CASE FILE</span>
-          <span>ME-2026-01</span>
+          <span>ME-2026-08</span>
           <span className="text-(--accent)">ACTIVE</span>
         </div>
         <div className="grid lg:grid-cols-[1.5fr_0.5fr]">
