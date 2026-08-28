@@ -3,7 +3,8 @@ import { Container } from "@/components/ui/container";
 const navItems = [
   { index: "01", label: "Profile", href: "#profile" },
   { index: "02", label: "Roadmap", href: "#roadmap" },
-  { index: "03", label: "Contact", href: "#contact" },
+  { index: "03", label: "Projects", href: "#projects" },
+  { index: "04", label: "Contact", href: "#contact" },
 ];
 
 export function Header() {
@@ -48,7 +49,7 @@ export function Header() {
         />
         <nav
           aria-label="Main navigation"
-          className="grid grid-cols-3 border-l border-border"
+          className="grid grid-cols-4 border-l border-border"
         >
           {navItems.map((item, itemIndex) => (
             <a

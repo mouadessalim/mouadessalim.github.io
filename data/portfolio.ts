@@ -91,6 +91,29 @@ export type PracticeItem = {
   icon: LucideIcon;
 };
 
+export type Project = {
+  code: string;
+  title: string;
+  description: string;
+  year: string;
+  status: string;
+  stack: string[];
+  href: string;
+};
+
+export const projects: Project[] = [
+  {
+    code: "PRJ-01",
+    title: "CSGO Value Calculator",
+    description:
+      "A Windows desktop utility that calculates the value of a Steam Counter-Strike inventory from a SteamID or profile link, with currency-aware pricing and an Electron interface backed by Python automation.",
+    year: "2021",
+    status: "Archived",
+    stack: ["Python", "Electron", "Selenium", "Steam"],
+    href: "https://github.com/mouadessalim/CsgoValueCalculator",
+  },
+];
+
 export const practice: PracticeItem[] = [
   {
     code: "WHY-01",
