@@ -32,6 +32,9 @@ jobs:
       - name: Add .nojekyll file
         run: touch out/.nojekyll
 
+      - name: Copy vercel.json to output
+        run: cp vercel.json out/
+
       - name: Deploy to production branch
         uses: JamesIves/github-pages-deploy-action@v4
         with:
