@@ -1,7 +1,8 @@
 {
-  "name": "my-project",
-  "version": "0.1.0",
+  "name": "mouadessalim.github.io",
+  "version": "1.0.1",
   "private": true,
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
