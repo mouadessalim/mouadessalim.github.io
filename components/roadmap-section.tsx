@@ -103,7 +103,7 @@ export function RoadmapSection() {
                           {step}
                         </span>
                         <span
-                          className={`absolute top-29 h-3.5 w-3.5 rounded-full border-2 bg-card shadow-[0_0_0_0.3rem_color-mix(in_oklch,var(--card),transparent_15%)] transition-transform group-hover:scale-135 group-aria-pressed:scale-135 md:top-32 ${
+                          className={`absolute top-[calc(50%+1.5rem)] h-3.5 w-3.5 -translate-y-1/2 rounded-full border-2 bg-card shadow-[0_0_0_0.3rem_color-mix(in_oklch,var(--card),transparent_15%)] transition-transform group-hover:scale-135 group-aria-pressed:scale-135 ${
                             explored
                               ? "border-dashed border-muted-foreground"
                               : current
