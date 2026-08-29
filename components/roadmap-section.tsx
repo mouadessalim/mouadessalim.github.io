@@ -94,7 +94,7 @@ export function RoadmapSection() {
                     >
                       <button
                         type="button"
-                        className="group flex h-full w-full cursor-pointer flex-col items-center justify-between gap-2 bg-transparent px-1.5 pb-4 pt-[1.15rem] text-foreground"
+                        className="group relative flex h-full w-full cursor-pointer flex-col items-center gap-2 bg-transparent px-1.5 pb-4 pt-[1.15rem] text-foreground"
                         aria-pressed={isSelected}
                         aria-label={`${step}, ${milestone.name}, ${statusLabel[milestone.status]}`}
                         onClick={() => setSelectedMilestone(index)}
@@ -103,7 +103,7 @@ export function RoadmapSection() {
                           {step}
                         </span>
                         <span
-                          className={`mt-17 h-3.5 w-3.5 rounded-full border-2 bg-card shadow-[0_0_0_0.3rem_color-mix(in_oklch,var(--card),transparent_15%)] transition-transform group-hover:scale-135 group-aria-pressed:scale-135 max-md:mt-14 ${
+                          className={`absolute top-7/10 h-3.5 w-3.5 rounded-full border-2 bg-card shadow-[0_0_0_0.3rem_color-mix(in_oklch,var(--card),transparent_15%)] transition-transform group-hover:scale-135 group-aria-pressed:scale-135 ${
                             explored
                               ? "border-dashed border-muted-foreground"
                               : current
@@ -115,7 +115,7 @@ export function RoadmapSection() {
                         <span
                           className={`max-w-18 text-balance text-center text-[0.67rem] font-bold leading-[1.15] ${
                             current ? "text-(--accent)" : ""
-                          }`}
+                          } mt-auto`}
                         >
                           {milestone.name}
                         </span>
