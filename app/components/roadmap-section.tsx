@@ -3,10 +3,10 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { journey, statusLabel } from "@/data/portfolio";
-import { Container } from "@/components/ui/container";
-import { SectionHeading } from "@/components/ui/section-heading";
-import { CodeBadge, Eyebrow } from "@/components/ui/badge";
-import { ControlButton } from "@/components/ui/button";
+import { Container } from "./ui/container";
+import { SectionHeading } from "./ui/section-heading";
+import { CodeBadge, Eyebrow } from "./ui/badge";
+import { ControlButton } from "./ui/button";
 
 export function RoadmapSection() {
   const [selectedMilestone, setSelectedMilestone] = useState(

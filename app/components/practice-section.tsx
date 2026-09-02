@@ -1,7 +1,7 @@
 import { practice } from "@/data/portfolio";
-import { Container } from "@/components/ui/container";
-import { SectionHeading } from "@/components/ui/section-heading";
-import { CodeBadge, Eyebrow } from "@/components/ui/badge";
+import { Container } from "./ui/container";
+import { SectionHeading } from "./ui/section-heading";
+import { CodeBadge, Eyebrow } from "./ui/badge";
 
 export function PracticeSection() {
   return (

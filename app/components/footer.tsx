@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
-import { Container } from "@/components/ui/container";
-import { Eyebrow } from "@/components/ui/badge";
+import { Container } from "./ui/container";
+import { Eyebrow } from "./ui/badge";
 
 export function Footer() {
   return (

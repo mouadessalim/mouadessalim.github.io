@@ -1,5 +1,5 @@
 import { ArrowDownRight, HeartPulse } from "lucide-react";
-import { Container } from "@/components/ui/container";
+import { Container } from "./ui/container";
 
 const profileHighlights = [
   { label: "First impulse", value: "Make logic visible" },

@@ -81,21 +81,21 @@ This portfolio is styled after a **clinical case file** (`ME-2026-08`), merging 
 ```tree
 my-portfolio/
 ├── 📂 app/                    # Next.js App Router root
+│   ├── 📂 components/         # Modular React UI components
+│   │   ├── ui/               # Shared atomic primitives (Badge, Container, Heading)
+│   │   ├── header.tsx        # Sticky clinical header & telemetry
+│   │   ├── hero-section.tsx  # Case file hero & subject identity
+│   │   ├── practice-section.tsx # Philosophy & medical perspective
+│   │   ├── roadmap-section.tsx # Interactive journey & milestone chart
+│   │   ├── projects-section.tsx # Curated case records & source links
+│   │   ├── observation-section.tsx # Clinical diagnostic notes
+│   │   └── footer.tsx        # Case closure & communication channels
 │   ├── globals.css           # Global tokens, OKLCH palette, animations
 │   ├── layout.tsx            # Root layout, Google Fonts, JSON-LD Schema
 │   ├── page.tsx              # Main portfolio page entry
 │   ├── manifest.ts           # Web app manifest generator
 │   ├── robots.ts             # SEO robots.txt generator
 │   └── sitemap.ts            # Dynamic sitemap generator
-├── 📂 components/             # Modular React UI components
-│   ├── ui/                   # Shared atomic primitives (Badge, Container, Heading)
-│   ├── header.tsx            # Sticky clinical header & telemetry
-│   ├── hero-section.tsx      # Case file hero & subject identity
-│   ├── practice-section.tsx  # Philosophy & medical perspective
-│   ├── roadmap-section.tsx   # Interactive journey & milestone chart
-│   ├── projects-section.tsx  # Curated case records & source links
-│   ├── observation-section.tsx# Clinical diagnostic notes
-│   └── footer.tsx            # Case closure & communication channels
 ├── 📂 data/
 │   └── portfolio.ts          # Structured project, practice, & journey records
 ├── 📂 public/                 # Static assets, favicons, OG images

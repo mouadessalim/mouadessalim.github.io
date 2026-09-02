@@ -1,8 +1,8 @@
 import { Code2, ExternalLink } from "lucide-react";
 import { projects } from "@/data/portfolio";
-import { Container } from "@/components/ui/container";
-import { CodeBadge, Eyebrow } from "@/components/ui/badge";
-import { SectionHeading } from "@/components/ui/section-heading";
+import { Container } from "./ui/container";
+import { CodeBadge, Eyebrow } from "./ui/badge";
+import { SectionHeading } from "./ui/section-heading";
 
 export function ProjectsSection() {
   return (

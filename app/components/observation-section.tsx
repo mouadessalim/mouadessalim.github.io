@@ -1,6 +1,6 @@
 import { Activity, FileText } from "lucide-react";
-import { Container } from "@/components/ui/container";
-import { Eyebrow } from "@/components/ui/badge";
+import { Container } from "./ui/container";
+import { Eyebrow } from "./ui/badge";
 
 const fieldNotes = [
   "Curiosity needs ethics, not just technical ability",

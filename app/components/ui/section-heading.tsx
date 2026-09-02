@@ -1,5 +1,5 @@
 import React from "react";
-import { CodeBadge, Eyebrow } from "@/components/ui/badge";
+import { CodeBadge, Eyebrow } from "./badge";
 
 export interface SectionHeadingProps {
   number: string;

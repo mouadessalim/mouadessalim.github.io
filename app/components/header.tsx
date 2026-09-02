@@ -1,4 +1,4 @@
-import { Container } from "@/components/ui/container";
+import { Container } from "./ui/container";
 
 const navItems = [
   { index: "01", label: "Profile", href: "#profile" },
