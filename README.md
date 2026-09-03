@@ -90,14 +90,14 @@ my-portfolio/
 │   │   ├── projects-section.tsx # Curated case records & source links
 │   │   ├── observation-section.tsx # Clinical diagnostic notes
 │   │   └── footer.tsx        # Case closure & communication channels
+│   ├── 📂 lib/                # Data models & portfolio definitions
+│   │   └── portfolio.ts      # Structured project, practice, & journey records
 │   ├── globals.css           # Global tokens, OKLCH palette, animations
 │   ├── layout.tsx            # Root layout, Google Fonts, JSON-LD Schema
 │   ├── page.tsx              # Main portfolio page entry
 │   ├── manifest.ts           # Web app manifest generator
 │   ├── robots.ts             # SEO robots.txt generator
 │   └── sitemap.ts            # Dynamic sitemap generator
-├── 📂 data/
-│   └── portfolio.ts          # Structured project, practice, & journey records
 ├── 📂 public/                 # Static assets, favicons, OG images
 ├── package.json              # Dependencies and deployment scripts
 ├── postcss.config.mjs        # PostCSS pipeline for Tailwind v4

@@ -1,4 +1,4 @@
-import { practice } from "@/data/portfolio";
+import { practice } from "../lib/portfolio";
 import { Container } from "./ui/container";
 import { SectionHeading } from "./ui/section-heading";
 import { CodeBadge, Eyebrow } from "./ui/badge";

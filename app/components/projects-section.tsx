@@ -1,5 +1,5 @@
 import { Code2, ExternalLink } from "lucide-react";
-import { projects } from "@/data/portfolio";
+import { projects } from "../lib/portfolio";
 import { Container } from "./ui/container";
 import { CodeBadge, Eyebrow } from "./ui/badge";
 import { SectionHeading } from "./ui/section-heading";

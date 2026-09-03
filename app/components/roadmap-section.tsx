@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { journey, statusLabel } from "@/data/portfolio";
+import { journey, statusLabel } from "../lib/portfolio";
 import { Container } from "./ui/container";
 import { SectionHeading } from "./ui/section-heading";
 import { CodeBadge, Eyebrow } from "./ui/badge";
