@@ -127,7 +127,9 @@ export default function RootLayout({
       <body className={`${manrope.variable} ${geistMono.variable}`}>
         {children}
       </body>
-      <GoogleAnalytics gaId="G-ZC0D7QX7VQ" />
+      {process.env.NODE_ENV === "production" && (
+        <GoogleAnalytics gaId="G-ZC0D7QX7VQ" />
+      )}
     </html>
   );
 }
