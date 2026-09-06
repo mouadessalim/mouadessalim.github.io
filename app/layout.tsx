@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Geist_Mono, Manrope } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 const manrope = Manrope({
@@ -126,6 +127,7 @@ export default function RootLayout({
       <body className={`${manrope.variable} ${geistMono.variable}`}>
         {children}
       </body>
+      <GoogleAnalytics gaId="G-ZC0D7QX7VQ" />
     </html>
   );
 }
