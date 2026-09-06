@@ -1,8 +1,12 @@
+"use client";
+
 import { Code2, ExternalLink } from "lucide-react";
 import { projects } from "../lib/portfolio";
+import { trackGitHubProjectClick } from "../lib/analytics";
 import { Container } from "./ui/container";
 import { CodeBadge, Eyebrow } from "./ui/badge";
 import { SectionHeading } from "./ui/section-heading";
+
 
 export function ProjectsSection() {
   return (
@@ -69,6 +73,10 @@ export function ProjectsSection() {
                 rel="noreferrer"
                 className="flex items-center justify-between gap-4 border-t border-border px-5 py-4 font-mono text-[0.65rem] font-bold uppercase tracking-widest transition-colors hover:bg-primary hover:text-primary-foreground md:w-40 md:flex-col md:items-end md:justify-between md:border-l md:border-t-0"
                 aria-label={`View ${project.title} source code on GitHub`}
+                onClick={() => trackGitHubProjectClick(project)}
+                onAuxClick={(e) => {
+                  if (e.button === 1) trackGitHubProjectClick(project);
+                }}
               >
                 View source
                 <ExternalLink aria-hidden="true" />
