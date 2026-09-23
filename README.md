@@ -1,6 +1,6 @@
 <div align="center">
 
-### _Medical Doctor & Full-Stack Software Developer_
+### _Medical Student & Full-Stack Software Developer_
 
 [![Live Site](https://img.shields.io/badge/LIVE%20SITE-mouadessalim.github.io-059669?style=for-the-badge&logo=googlechrome&logoColor=white)](https://mouadessalim.github.io)
 [![Next.js](https://img.shields.io/badge/Next.js%2016-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)

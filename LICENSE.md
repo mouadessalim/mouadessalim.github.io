@@ -1,6 +1,6 @@
 # Proprietary Source License
 
-Copyright (c) 2026 Dr. Mouad Essalim. All rights reserved.
+Copyright (c) 2026 Mouad Essalim. All rights reserved.
 
 ## Terms and Conditions
 

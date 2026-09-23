@@ -16,16 +16,15 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://mouadessalim.github.io"),
   title: {
-    default: "Mouad Essalim | Medical Doctor & Software Developer",
+    default: "Mouad Essalim | Medical Student & Software Developer",
     template: "%s | Mouad Essalim",
   },
   description:
-    "Personal case file and engineering portfolio of Mouad Essalim — Medical Doctor and Full-Stack Software Developer building clean web and health systems.",
+    "Personal case file and engineering portfolio of Mouad Essalim — Medical Student and Full-Stack Software Developer building clean web and health systems.",
   keywords: [
-    "Dr. Mouad Essalim",
     "Mouad Essalim",
     "mouadessalim",
-    "Medical Doctor",
+    "Medical Student",
     "Software Developer",
     "Full Stack Developer",
     "Health Tech",
@@ -41,16 +40,16 @@ export const metadata: Metadata = {
     type: "profile",
     locale: "en_US",
     url: "https://mouadessalim.github.io",
-    title: "Mouad Essalim | Medical Doctor & Software Developer",
+    title: "Mouad Essalim | Medical Student & Software Developer",
     description:
       "Turning clinical discipline and code into robust software systems. Explore projects, roadmap, and case notes.",
     siteName: "Mouad Essalim Portfolio",
   },
   twitter: {
     card: "summary",
-    title: "Dr. Mouad Essalim | Medical Doctor & Software Developer",
+    title: "Mouad Essalim | Medical Student & Software Developer",
     description:
-      "Medical Doctor & Software Developer building clean web and health systems.",
+      "Medical Student & Software Developer building clean web and health systems.",
   },
   robots: {
     index: true,
@@ -85,11 +84,11 @@ const jsonLd = {
       "@type": "Person",
       "@id": "https://mouadessalim.github.io/#person",
       name: "Mouad Essalim",
-      jobTitle: ["Medical Doctor", "Software Developer"],
+      jobTitle: ["Medical Student", "Software Developer"],
       url: "https://mouadessalim.github.io",
       email: "mailto:essalim99@gmail.com",
       description:
-        "Medical Doctor and Full-Stack Software Developer building modern web applications and health systems.",
+        "Medical Student and Full-Stack Software Developer building modern web applications and health systems.",
       knowsAbout: [
         "Medicine",
         "Clinical Systems",
