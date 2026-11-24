@@ -1,6 +1,6 @@
 "use client";
 
-import { Code2, ExternalLink } from "lucide-react";
+import { Code2, ExternalLink, ShieldAlert } from "lucide-react";
 import { projects } from "../lib/portfolio";
 import { trackGitHubProjectClick } from "../lib/analytics";
 import { Container } from "./ui/container";
@@ -52,6 +52,34 @@ export function ProjectsSection() {
                     {project.description}
                   </p>
                 </div>
+                {project.notice && (
+                  <div className="flex max-w-3xl flex-col gap-3 border border-(--accent)/45 bg-(--accent)/8 px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
+                    <div className="flex flex-col gap-1">
+                      <span className="inline-flex items-center gap-2 font-mono text-[0.65rem] font-bold uppercase tracking-[0.08em] text-(--accent)">
+                        <ShieldAlert
+                          className="h-3.5 w-3.5 shrink-0"
+                          aria-hidden="true"
+                        />
+                        <span>{project.notice.label}</span>
+                      </span>
+                      <p className="text-pretty text-xs leading-relaxed text-muted-foreground">
+                        {project.notice.text}
+                      </p>
+                    </div>
+                    <a
+                      href={project.notice.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex w-fit shrink-0 items-center gap-1.5 border border-border bg-card px-3 py-1.5 font-mono text-[0.6rem] font-bold uppercase tracking-[0.08em] text-foreground transition-colors hover:border-(--accent) hover:text-(--accent)"
+                    >
+                      {project.notice.linkLabel}
+                      <ExternalLink
+                        className="h-3 w-3 shrink-0"
+                        aria-hidden="true"
+                      />
+                    </a>
+                  </div>
+                )}
                 <ul
                   className="flex flex-wrap gap-2"
                   aria-label="Technologies used"

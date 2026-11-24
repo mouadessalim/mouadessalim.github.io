@@ -91,6 +91,13 @@ export type PracticeItem = {
   icon: LucideIcon;
 };
 
+export type ProjectNotice = {
+  label: string;
+  text: string;
+  linkLabel: string;
+  href: string;
+};
+
 export type Project = {
   code: string;
   title: string;
@@ -100,6 +107,7 @@ export type Project = {
   status: string;
   stack: string[];
   href: string;
+  notice?: ProjectNotice;
 };
 
 export const projects: Project[] = [
@@ -124,6 +132,12 @@ export const projects: Project[] = [
     status: "Archived",
     stack: ["Python", "Chromium", "Discord API", "Windows"],
     href: "https://github.com/mouadessalim/CookedGrabber",
+    notice: {
+      label: "Blocked in Brazil",
+      text: "Access to this repository is blocked in Brazil following a Brazilian government legal takedown notice forwarded by GitHub Trust & Safety.",
+      linkLabel: "View notice",
+      href: "https://github.com/github/gov-takedowns",
+    },
   },
   {
     code: "PRJ-03",
