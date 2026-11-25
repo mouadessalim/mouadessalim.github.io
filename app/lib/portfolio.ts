@@ -12,67 +12,67 @@ export const journey: JourneyMilestone[] = [
   {
     name: "Bash Snake",
     description:
-      "At 13, I tried to make Snake inside a terminal. It was clumsy, limited, and enough to make coding feel like mine.",
+      "At 13, I tried writing Snake inside a Bash terminal. Moving characters across a grid of text was clumsy, slow, and got me hooked on programming.",
     status: "learned",
   },
   {
     name: "Python",
     description:
-      "Python felt logical immediately. I could turn an idea into working behavior without fighting the language first.",
+      "My first real language. I used it for file scripts, API wrappers, and small utilities whenever I wanted to automate repetitive tasks on Windows and Linux.",
     status: "learned",
   },
   {
     name: "Tkinter & PyQt",
     description:
-      "I wanted windows, buttons, and real apps—not scripts. I kept testing GUI libraries until I understood that Python was not the production interface path I was looking for.",
+      "I wanted windows and buttons instead of terminal prompts. Building desktop GUIs in Python worked, but styling and packaging executables for other people was frustrating.",
     status: "learned",
   },
   {
-    name: "Grey-hat detour",
+    name: "Security detour",
     description:
-      "As a teenager I wandered into Kali Linux, phishing experiments, obfuscation, RATs, and SQL injection on old sites. I left that chapter behind; it taught me how easily curiosity becomes irresponsible when it has no boundaries.",
+      "As a teenager, I spent time in Kali Linux testing SQL injection on old sites and studying how session tokens and local browser storage get abused. Seeing how fragile client state can be changed how I think about auth and security.",
     status: "explored",
   },
   {
     name: "Selenium",
     description:
-      "Web scraping brought me back from breaking things to making useful systems: browsers became something I could observe, automate, and learn from.",
+      "Browser automation shifted my focus back to practical utilities: scraping dynamic pages, pricing Steam inventories, and letting Python drive headless browsers.",
     status: "learned",
   },
   {
     name: "Go & C++",
     description:
-      "I explored concurrency, memory, and what sits below the abstractions I was used to. Neither became home, but both sharpened how I think.",
+      "Stepped below high-level scripting to work with static types, memory management, and concurrency. I don't use either daily, but they made runtime cost much less abstract.",
     status: "explored",
   },
   {
     name: "Dart & Flutter",
     description:
-      "Flutter finally gave me the direct path from logic to visible interface that I had been searching for since Python.",
+      "The first UI toolkit where layout, state, and cross-platform builds actually felt cohesive after years of fighting Python desktop libraries.",
     status: "learned",
   },
   {
-    name: "JavaScript",
+    name: "JavaScript & TS",
     description:
-      "The web stopped looking like documents and started looking like the production environment I had wanted all along.",
+      "Moving to the browser solved distribution overnight: anyone could use what I built through a link instead of downloading an installer.",
     status: "learned",
   },
   {
     name: "GCP & Firebase",
     description:
-      "I learned that an interface is only the surface; authentication, data, deployment, and reliability are part of the product too.",
+      "Used Firebase Auth, Firestore, and cloud hosting to move past local-only tools and support real accounts, persistent data, and deployment.",
     status: "learned",
   },
   {
     name: "React",
     description:
-      "Components gave structure to the way I naturally build: isolate a problem, understand its state, then compose the pieces.",
+      "Component-driven UI and predictable state management gave me what I liked about Flutter with the reach and ecosystem of the web.",
     status: "learned",
   },
   {
     name: "Next.js & Tailwind",
     description:
-      "This is where I am now: learning to build complete web products with clearer systems, better judgment, and fewer unnecessary detours.",
+      "My current stack for building fast, accessible web applications in TypeScript, from static sites like this portfolio to full-stack apps.",
     status: "current",
   },
 ];
@@ -80,7 +80,7 @@ export const journey: JourneyMilestone[] = [
 export const statusLabel: Record<JourneyStatus, string> = {
   learned: "Learned",
   explored: "Explored",
-  current: "Learning now",
+  current: "Current focus",
 };
 
 export type PracticeItem = {
@@ -116,7 +116,7 @@ export const projects: Project[] = [
     title: "CSGO Value Calculator",
     category: "Desktop utility / Steam inventory",
     description:
-      "A Windows desktop utility that calculates the value of a Steam Counter-Strike inventory from a SteamID or profile link, with currency-aware pricing and an Electron interface backed by Python automation.",
+      "Windows desktop app that totals the market value of a Counter-Strike Steam inventory from a SteamID or profile URL, pairing an Electron frontend with Python/Selenium price scraping and currency conversion.",
     year: "2021",
     status: "Archived",
     stack: ["Python", "Electron", "Selenium", "Steam"],
@@ -125,9 +125,9 @@ export const projects: Project[] = [
   {
     code: "PRJ-02",
     title: "CookedGrabber",
-    category: "Security research / Educational PoC",
+    category: "Security PoC / Windows storage",
     description:
-      "An educational proof-of-concept demonstrating how info-stealers harvest browser session cookies, tokens, and credentials on Windows systems, built to study browser storage vulnerabilities and security awareness.",
+      "Archived proof-of-concept examining how Chromium browsers store session cookies and DPAPI-encrypted credentials locally on Windows, and why local storage alone does not protect active sessions.",
     year: "2022",
     status: "Archived",
     stack: ["Python", "Chromium", "Discord API", "Windows"],
@@ -142,9 +142,9 @@ export const projects: Project[] = [
   {
     code: "PRJ-03",
     title: "Discord QR Token Logger",
-    category: "Social engineering / Security research",
+    category: "Security PoC / Authentication",
     description:
-      "An educational security tool illustrating how QR code phishing attacks intercept authentication tokens via WebSocket session hijacking, demonstrating social engineering attack vectors and mitigation techniques.",
+      "Archived proof-of-concept showing how Discord's remote-auth WebSocket handshake can be proxied behind a spoofed QR login prompt to intercept session tokens when users scan untrusted codes.",
     year: "2022",
     status: "Archived",
     stack: ["Python", "WebSockets", "QR Code", "Discord API"],
@@ -154,19 +154,19 @@ export const projects: Project[] = [
 
 export const practice: PracticeItem[] = [
   {
-    code: "WHY-01",
-    title: "I have always wanted to see the result",
+    code: "BG-01",
+    title: "From local scripts to the browser",
     description:
-      "A terminal game was enough at 13, but scripts quickly stopped being enough. I kept chasing the moment when logic becomes something another person can see, touch, and actually use. That search took me through Python GUIs, Flutter, and eventually the web.",
-    note: "The recurring motive",
+      "Most of my stack choices came from hitting practical walls. Terminal scripts pushed me toward Python desktop GUIs; painful desktop packaging pushed me to Flutter and then the web. Today I build with React, Next.js, and Firebase so I can ship a complete application behind a URL without installer headaches.",
+    note: "Engineering",
     icon: Code2,
   },
   {
-    code: "NOW-02",
-    title: "Medicine changed how I build",
+    code: "BG-02",
+    title: "Building under real time constraints",
     description:
-      "Clinical study trained me to slow down, notice weak signals, and resist an answer that only looks clever. I bring that discipline into software: understand the real problem first, then choose the smallest system that can solve it well.",
-    note: "The present lens",
+      "Medical school leaves very little room for over-engineered side projects and zero patience for cluttered software. Clinical study trained me to gather context before jumping to a fix, keep systems simple enough to maintain months later, and write interfaces that respect the user's attention.",
+    note: "Clinical training",
     icon: Stethoscope,
   },
 ];

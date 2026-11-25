@@ -2,9 +2,9 @@ import { ArrowDownRight, HeartPulse } from "lucide-react";
 import { Container } from "./ui/container";
 
 const profileHighlights = [
-  { label: "First impulse", value: "Make logic visible" },
-  { label: "Longest detour", value: "Finding the right medium" },
-  { label: "Current chapter", value: "Medicine + production web" },
+  { label: "Focus", value: "Full-stack web apps" },
+  { label: "Core stack", value: "TypeScript, React, Next.js" },
+  { label: "Training", value: "Medicine (MD candidate)" },
 ];
 
 export function HeroSection() {
@@ -20,30 +20,31 @@ export function HeroSection() {
           <div className="flex flex-col gap-8 p-6 md:p-10 lg:border-r lg:border-border lg:p-14">
             <div className="flex items-center gap-3 font-mono text-[0.6875rem] uppercase tracking-widest text-primary">
               <HeartPulse aria-hidden="true" />
-              Personal record / still in progress
+              Medical student &amp; software developer
             </div>
             <div className="flex flex-col gap-5">
               <p className="font-mono text-xs text-muted-foreground">
-                SUBJECT: MOUAD ESSALIM · FIRST PROGRAM: AGE 13
+                MOUAD ESSALIM · FULL-STACK WEB &amp; AUTOMATION
               </p>
               <h1 className="text-balance text-5xl font-bold leading-[0.95] tracking-tighter md:text-7xl">
-                I started with Snake
+                Studying medicine.
                 <br />
                 <span className="underline decoration-(--accent) decoration-[0.1em] underline-offset-[0.12em]">
-                  inside a Bash terminal.
+                  Building web software.
                 </span>
               </h1>
               <p className="max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">
-                I was thirteen, trying to make a game in a place that was never
-                designed for it. That stubborn experiment became a long search
-                for the right way to turn logic into useful, visible software.
+                I&apos;m a medical student and self-taught developer. Over
+                nearly a decade of writing code, I moved from Python automation
+                and desktop utilities to full-stack web applications with
+                TypeScript, React, and Next.js.
               </p>
             </div>
             <a
-              href="#profile"
+              href="#projects"
               className="inline-flex w-fit items-center gap-2 border-b-2 border-primary pb-1 font-mono text-xs font-semibold uppercase tracking-wider text-primary"
             >
-              Open case notes
+              View repositories
               <ArrowDownRight aria-hidden="true" />
             </a>
           </div>
@@ -64,14 +65,14 @@ export function HeroSection() {
             ))}
             <div className="flex flex-col gap-1.5 p-5">
               <span className="font-mono text-[0.625rem] uppercase tracking-[0.12em] text-muted-foreground">
-                Signal
+                Status
               </span>
               <strong className="flex items-center gap-2 text-sm">
                 <i
                   className="ecg-pulse h-2 w-2 rounded-full bg-(--accent)"
                   aria-hidden="true"
                 />
-                Learning actively
+                Building &amp; learning actively
               </strong>
             </div>
           </aside>

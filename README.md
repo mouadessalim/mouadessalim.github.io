@@ -11,25 +11,23 @@
 <br />
 
 <p align="center">
-  <b>A bespoke, high-performance portfolio crafted with the precision of clinical medicine and the rigor of production web engineering.</b>
+  <b>Personal portfolio of Mouad Essalim — medical student and self-taught web developer.</b>
 </p>
 
 ---
 
 </div>
 
-## 🩺 The Philosophy: _Medicine Changed How I Build_
+## Overview
 
-> _"Clinical study trained me to slow down, notice weak signals, and resist an answer that only looks clever. I bring that discipline into software: understand the real problem first, then choose the smallest, most resilient system that can solve it well."_
-
-This portfolio is styled after a **clinical case file** (`ME-2026-08`), merging minimalist editorial aesthetics with precision instrumentation: ECG cardiac pulses, monospaced diagnostic telemetry, modular case notes, and interactive developmental milestones.
+Static-first personal site built with Next.js (App Router), React, TypeScript, and Tailwind CSS v4. Styled around a structured clinical chart (`ME-2026-08`) with an interactive 11-stage stack timeline, background notes, archived open-source repositories, and structured JSON-LD metadata.
 
 ---
 
 ## ✨ Key Architectural Features
 
 - **⚡ Modern Stack Foundation**: Built on Next.js 16 (App Router), React 19, and Tailwind CSS v4 with full static output optimization.
-- **🩺 Clinical Design System**: Custom medical case-file visual language, monospaced indices (`PRJ-01`, `WHY-01`, `NOW-02`), live ECG pulse indicators, and responsive grid layouts.
+- **🩺 Clinical Design System**: Custom medical case-file visual language, monospaced indices (`PRJ-01`, `BG-01`, `BG-02`), live ECG pulse indicators, and responsive grid layouts.
 - **🧭 Interactive Roadmap**: Interactive milestone timeline charting 11 evolutionary stages from Bash Snake to full-stack production systems.
 - **🔍 Comprehensive SEO & GEO**:
   - Semantic Schema.org `Person` & `WebSite` JSON-LD structured graph data.

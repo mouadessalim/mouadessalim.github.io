@@ -18,13 +18,13 @@ export function Header() {
         >
           <span className="flex min-w-0 flex-col gap-0.5">
             <span className="font-mono text-[0.48rem] font-bold uppercase tracking-[0.13em] text-muted-foreground">
-              Subject identity
+              Portfolio
             </span>
             <strong className="truncate text-[0.82rem] leading-tight">
               Mouad Essalim
             </strong>
             <span className="font-mono text-[0.55rem] uppercase tracking-[0.07em] text-muted-foreground max-md:hidden">
-              Clinical medicine / developer
+              Medical student · Web developer
             </span>
           </span>
         </a>
@@ -40,7 +40,7 @@ export function Header() {
               className="ecg-pulse h-2 w-2 rounded-full bg-(--accent)"
               aria-hidden="true"
             />{" "}
-            Available to build
+            Open to projects
           </strong>
         </div>
         <span

@@ -12,15 +12,15 @@ export function PracticeSection() {
     >
       <SectionHeading
         number="01"
-        eyebrowText="What kept pulling me forward"
+        eyebrowText="Background"
         title={
           <>
-            I was never collecting
+            Self-taught in code.
             <br />
-            languages for the list.
+            Trained in medicine.
           </>
         }
-        description="Each tool was an attempt to answer the same question: how do I turn an idea in my head into something real, understandable, and useful to someone else?"
+        description="I didn't come through a computer science degree. I learned software by building tools I wanted to use, alongside full-time medical studies."
       />
       <div className="grid gap-5 md:grid-cols-2">
         {practice.map((item) => {

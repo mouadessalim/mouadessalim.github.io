@@ -20,15 +20,16 @@ export const metadata: Metadata = {
     template: "%s | Mouad Essalim",
   },
   description:
-    "Personal case file and engineering portfolio of Mouad Essalim — Medical Student and Full-Stack Software Developer building clean web and health systems.",
+    "Portfolio of Mouad Essalim, medical student and self-taught software developer building web applications with TypeScript, React, and Next.js.",
   keywords: [
     "Mouad Essalim",
     "mouadessalim",
     "Medical Student",
     "Software Developer",
-    "Full Stack Developer",
-    "Health Tech",
-    "Clinical Software",
+    "Full-Stack Web Developer",
+    "TypeScript",
+    "Next.js",
+    "React",
   ],
   authors: [{ name: "Mouad Essalim", url: "https://mouadessalim.github.io" }],
   creator: "Mouad Essalim",
@@ -42,14 +43,14 @@ export const metadata: Metadata = {
     url: "https://mouadessalim.github.io",
     title: "Mouad Essalim | Medical Student & Software Developer",
     description:
-      "Turning clinical discipline and code into robust software systems. Explore projects, roadmap, and case notes.",
+      "Medical student and self-taught developer building fast, practical web software with TypeScript, React, and Next.js.",
     siteName: "Mouad Essalim Portfolio",
   },
   twitter: {
     card: "summary",
     title: "Mouad Essalim | Medical Student & Software Developer",
     description:
-      "Medical Student & Software Developer building clean web and health systems.",
+      "Medical student and software developer building web applications with TypeScript, React, and Next.js.",
   },
   robots: {
     index: true,
@@ -88,12 +89,14 @@ const jsonLd = {
       url: "https://mouadessalim.github.io",
       email: "mailto:essalim99@gmail.com",
       description:
-        "Medical Student and Full-Stack Software Developer building modern web applications and health systems.",
+        "Medical student and self-taught software developer building web applications with TypeScript, React, and Next.js.",
       knowsAbout: [
         "Medicine",
-        "Clinical Systems",
-        "Clinical Software",
         "Full-Stack Web Development",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Python",
       ],
       sameAs: ["https://github.com/mouadessalim"],
     },

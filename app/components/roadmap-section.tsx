@@ -20,14 +20,15 @@ export function RoadmapSection() {
       <Container className="flex flex-col gap-9 py-12 md:py-20">
         <SectionHeading
           number="02"
-          eyebrowText="The honest version"
+          eyebrowText="Progression"
           title={
             <>
-              Not a straight path.
-              <br />A useful one.
+              What I learned, kept,
+              <br />
+              and moved past.
             </>
           }
-          description="I followed curiosity into good tools, dead ends, and one chapter I would handle differently now. Every stop changed what I chose next."
+          description="Eleven stages from my first terminal script to my current web stack, including the detours that steered me toward better tools."
         />
         <div
           className="flex flex-wrap gap-x-6 gap-y-4 font-mono text-[0.625rem] uppercase tracking-widest text-muted-foreground"
@@ -43,7 +44,7 @@ export function RoadmapSection() {
           </span>
           <span className="flex items-center gap-2">
             <i className="h-2.5 w-2.5 rounded-full border-2 border-(--accent) bg-(--accent)" />
-            Learning now
+            Current focus
           </span>
         </div>
         <figure
@@ -52,11 +53,9 @@ export function RoadmapSection() {
         >
           <div className="flex flex-wrap items-center justify-between gap-4 border-b border-border px-5 py-4 max-md:items-start">
             <div className="flex flex-col gap-1.5">
-              <Eyebrow id="ecg-title">
-                Learning signal / 11 recorded beats
-              </Eyebrow>
+              <Eyebrow id="ecg-title">Stack timeline / 11 milestones</Eyebrow>
               <p className="text-[0.8rem] text-muted-foreground">
-                Choose a beat to inspect that stage of the journey.
+                Select a beat to see what I built at that stage.
               </p>
             </div>
             <span className="flex items-center gap-2 font-mono text-[0.625rem] font-bold uppercase tracking-widest text-(--accent)">
@@ -64,7 +63,7 @@ export function RoadmapSection() {
                 className="ecg-pulse h-2 w-2 rounded-full bg-(--accent)"
                 aria-hidden="true"
               />
-              Signal active
+              Current: Next.js
             </span>
           </div>
           <div
@@ -182,9 +181,8 @@ export function RoadmapSection() {
             id="ecg-caption"
             className="border-t border-border bg-muted px-5 py-3 font-mono text-[0.58rem] uppercase leading-normal tracking-[0.07em] text-muted-foreground max-md:normal-case max-md:tracking-[0.03em]"
           >
-            The muted beats mark chapters I explored but did not
-            keep—including the grey-hat detour that taught me why technical
-            curiosity needs boundaries.
+            Dashed nodes mark detours I explored and moved on from; solid nodes
+            mark tools that shaped what I use today.
           </figcaption>
         </figure>
       </Container>

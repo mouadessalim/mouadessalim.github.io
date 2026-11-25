@@ -14,15 +14,15 @@ export function ProjectsSection() {
       <Container className="flex flex-col gap-8 py-12 md:py-20">
         <SectionHeading
           number="03"
-          eyebrowText="Selected work"
+          eyebrowText="Public archive"
           title={
             <>
-              Ideas that made it
+              Open-source
               <br />
-              into working software.
+              repositories.
             </>
           }
-          description="A record of projects that moved beyond experiments—built to solve a concrete problem, shipped, and learned from."
+          description="Archived desktop utilities and security proofs-of-concept from 2021–2022. Newer web builds in TypeScript and Next.js are in progress."
         />
 
         <div className="flex flex-col gap-5">
