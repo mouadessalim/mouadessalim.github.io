@@ -34,7 +34,7 @@ export function Footer() {
         </div>
         <div className="flex flex-col gap-3 border-t border-current/20 pt-5 font-mono text-[0.6875rem] uppercase tracking-wider md:flex-row md:justify-between">
           <span>Mouad Essalim · Medical student &amp; web developer</span>
-          <span>Updated 2026</span>
+          <span>2026</span>
         </div>
       </Container>
     </footer>

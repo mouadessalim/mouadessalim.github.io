@@ -1,4 +1,4 @@
-import { Activity, Layers } from "lucide-react";
+import { Layers } from "lucide-react";
 import { Container } from "./ui/container";
 import { Eyebrow } from "./ui/badge";
 
@@ -21,32 +21,21 @@ export function ObservationSection() {
   return (
     <Container
       as="section"
-      className="grid gap-5 py-12 md:grid-cols-[1.2fr_0.8fr] md:py-20"
+      className="grid gap-6 py-12 lg:grid-cols-[1.4fr_0.6fr] md:py-20"
     >
-      <article className="flex min-h-72 flex-col justify-between gap-10 border border-border bg-card p-6 md:p-8">
-        <div className="flex items-center gap-3">
-          <Activity className="text-primary" aria-hidden="true" />
-          <Eyebrow>Now / 2026</Eyebrow>
-        </div>
-        <div className="flex flex-col gap-3">
-          <h2 className="text-balance text-3xl font-bold leading-tight tracking-[-0.035em] md:text-4xl">
-            Balancing clinical coursework with practical web tools.
-          </h2>
-          <p className="max-w-2xl text-pretty leading-relaxed text-muted-foreground">
-            Right now my time is split between medical school and sharpening my
-            full-stack TypeScript workflow. I&apos;m particularly interested in
-            fast, static-first web apps, developer utilities, and clean tools
-            for students and clinicians.
-          </p>
-        </div>
+      <article className="flex min-h-72 flex-col justify-center gap-6 border border-border border-l-4 border-l-(--accent) bg-card p-8 shadow-[0.6rem_0.6rem_0_color-mix(in_oklch,var(--primary),transparent_86%)] md:p-12">
+        <blockquote className="max-w-3xl text-balance text-[clamp(2rem,4.2vw,3.75rem)] font-bold leading-[1.08] tracking-[-0.04em] text-foreground">
+          “I learned more from chasing the wrong tools honestly than I ever
+          would have learned from pretending the path was straight.”
+        </blockquote>
       </article>
-      <article className="flex flex-col justify-between gap-8 border border-border bg-card p-6 md:p-8">
+      <article className="flex flex-col justify-between gap-8 border border-border bg-muted/40 p-6 md:p-7">
         <div className="flex items-start justify-between gap-4">
           <div>
             <Eyebrow>Working toolkit</Eyebrow>
-            <h3 className="mt-1.5 text-2xl font-bold tracking-tight">
+            <h2 className="mt-1.5 text-xl font-bold tracking-tight">
               What I build with today
-            </h3>
+            </h2>
           </div>
           <Layers className="shrink-0 text-(--accent)" aria-hidden="true" />
         </div>
