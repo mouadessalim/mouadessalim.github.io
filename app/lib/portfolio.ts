@@ -136,7 +136,7 @@ export const projects: Project[] = [
       label: "Blocked in Brazil",
       text: "Access to this repository is blocked in Brazil following a Brazilian government legal takedown notice forwarded by GitHub Trust & Safety.",
       linkLabel: "View notice",
-      href: "https://github.com/github/gov-takedowns",
+      href: "https://github.com/github/gov-takedowns/blob/master/Brazil/2026/2026-11-06-Brazil.md",
     },
   },
   {
